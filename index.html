@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Master Band | Royal Wedding Band in Shikohabad</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-red: #8B0000;
+            --dark-maroon: #4A0404;
+            --gold: #D4AF37;
+            --light-gold: #F9E596;
+            --bg-cream: #FFFDF7;
+            --text-dark: #222222;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .brand-font {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--dark-maroon);
+            color: var(--light-gold);
+            padding: 8px 5%;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .top-bar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Navigation */
+        header {
+            background: rgba(139, 0, 0, 0.96);
+            padding: 15px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            border-bottom: 2px solid var(--gold);
+        }
+
+        .logo {
+            color: var(--gold);
+            font-size: 1.6rem;
+            font-weight: 800;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #fff;
+            font-size: 0.9rem;
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--gold);
+        }
+
+        .nav-btn {
+            background: var(--gold);
+            color: var(--dark-maroon) !important;
+            padding: 8px 18px;
+            border-radius: 5px;
+            font-weight: 700 !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(40, 0, 0, 0.78), rgba(74, 4, 4, 0.85)), 
+                        url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 40px 5%;
+            border-bottom: 4px solid var(--gold);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.2);
+            border: 1px solid var(--gold);
+            color: var(--light-gold);
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: 3.4rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            margin-bottom: 30px;
+            color: #f3f3f3;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-gold {
+            background: var(--gold);
+            color: var(--dark-maroon);
+        }
+
+        .btn-gold:hover {
+            background: var(--light-gold);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--gold);
+            color: #fff;
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--gold);
+            color: var(--dark-maroon);
+        }
+
+        /* Section Common */
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.4rem;
+            color: var(--primary-red);
+            margin-bottom: 10px;
+        }
+
+        .section-title .divider {
+            width: 80px;
+            height: 3px;
+            background: var(--gold);
+            margin: 0 auto 15px;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 12px;
+            border: 4px solid var(--gold);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            color: var(--dark-maroon);
+            margin-bottom: 15px;
+        }
+
+        .owner-card {
+            background: #fff;
+            border-left: 5px solid var(--primary-red);
+            padding: 18px 22px;
+            margin-top: 20px;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .owner-card h4 {
+            color: var(--primary-red);
+            font-size: 1.1rem;
+        }
+
+        /* Services Grid */
+        .services-section {
+            background: #FAF3E0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 30px 25px;
+            border-radius: 10px;
+            text-align: center;
+            border-top: 4px solid var(--gold);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            border-top-color: var(--primary-red);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-red);
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--dark-maroon);
+        }
+
+        /* Booking & Contact Section */
+        .booking-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 40px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid #eee;
+        }
+
+        .contact-info-box {
+            background: linear-gradient(145deg, var(--primary-red), var(--dark-maroon));
+            color: #fff;
+            padding: 35px;
+            border-radius: 10px;
+            border: 2px solid var(--gold);
+        }
+
+        .contact-info-box h3 {
+            color: var(--gold);
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 22px;
+        }
+
+        .info-item i {
+            color: var(--gold);
+            font-size: 1.3rem;
+            margin-top: 4px;
+        }
+
+        .booking-form .form-group {
+            margin-bottom: 18px;
+        }
+
+        .booking-form label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--dark-maroon);
+        }
+
+        .booking-form input, .booking-form select, .booking-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .booking-form input:focus, .booking-form select:focus {
+            outline: none;
+            border-color: var(--primary-red);
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25D366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-maroon);
+            color: #ddd;
+            text-align: center;
+            padding: 30px 5%;
+            border-top: 3px solid var(--gold);
+        }
+
+        footer span {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            .hero h1 { font-size: 2.3rem; }
+            .about-grid, .booking-container { grid-template-columns: 1fr; }
+            section { padding: 50px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-bar">
+        <div><i class="fas fa-map-marker-alt"></i> Shagun Vatika ke Paas, Shikohabad (U.P.)</div>
+        <div><i class="fas fa-phone-alt"></i> Call / WhatsApp: <a href="tel:+919897985057">+91 98979 85057</a> (Prop: Banne Khan)</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">
+            GREAT MASTER BAND
+            <span>ROYAL WEDDING BAND • SHIKOHABAD</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking" class="nav-btn">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="badge"><i class="fas fa-crown"></i> Shikohabad's Most Trusted Royal Wedding Band</div>
+            <h1>GREAT MASTER BAND</h1>
+            <p>Aapki shaadi aur baraat ko banayein ek shahi yaadgar! Modern Brass Band, Punjabi Dhol, Vintage Baggi, Chhatri Lights aur Grand Aatishbazi ke saath.</p>
+            <div class="hero-btns">
+                <a href="#booking" class="btn btn-gold"><i class="fas fa-calendar-check"></i> Online Booking Karein</a>
+                <a href="tel:+919897985057" class="btn btn-outline"><i class="fas fa-phone"></i> Call: 9897985057</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title">
+            <h2>About Great Master Band</h2>
+            <div class="divider"></div>
+            <p>Shahi Andaaz, Behtareen Sur aur Anushasan ke Saath Baraat ka Swagat</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=900&q=80" alt="Royal Indian Wedding Baraat">
+            </div>
+            <div class="about-text">
+                <h3>Shikohabad ki Shaan — Great Master Band</h3>
+                <p><strong>Great Master Band</strong> pichle kai saalon se Shikohabad aur aas-paas ke ilakon mein shaadi-baraat aur shubh avsaron par apni shandaar prastuti de raha hai. Hamari team mein anubhavi kalakar, shahi uniform, modern sound system aur aakarshak lighting ki poori vyavastha hai.</p>
+                <p style="margin-top: 12px;">Chahe traditional wedding tunes hon ya latest Bollywood beats, hum har baraat ko ek royal celebration bana dete hain.</p>
+                
+                <div class="owner-card">
+                    <h4><i class="fas fa-user-tie"></i> Proprietor: Banne Khan</h4>
+                    <p><i class="fas fa-map-pin"></i> <strong>Address:</strong> Shagun Vatika ke Paas, Shikohabad, Uttar Pradesh</p>
+                    <p><i class="fas fa-mobile-alt"></i> <strong>Mobile:</strong> <a href="tel:+919897985057" style="color: #8B0000; font-weight: 700; text-decoration: none;">9897985057</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="section-title">
+            <h2>Hamari Shahi Services</h2>
+            <div class="divider"></div>
+            <p>Ek hi chhat ke niche baraat ki sampoorn shahi vyavastha</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-music"></i></div>
+                <h3>Royal Brass Band</h3>
+                <p>Shahi uniform mein saje hue trained musicians jo latest Bollywood aur classical dhunon par baraat mein jaan daal dete hain.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-horse"></i></div>
+                <h3>Ghodi & Shahi Baggi</h3>
+                <p>Dulhe ke liye khoobsurat saji hui safed ghodi aur Maharaja style shahi baggi (Rath) ki suvidha.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-drum"></i></div>
+                <h3>Punjabi Dhol & Tasha</h3>
+                <p>High-energy Punjabi Dhol aur Nashik Tasha party jo aapke mehmaano ko naachne par majboor kar degi.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3>LED Chhatri & Jhoomar Lights</h3>
+                <p>Raat ki baraat ko roshan karne ke liye modern LED Chhatri, Brass Lamps aur generator backup lighting.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-fire-alt"></i></div>
+                <h3>Cold Pyro & Aatishbazi</h3>
+                <p>Jaimala aur baraat swagat ke liye surakshit Cold Pyro, Colour Smoke aur shandaar sky-shot aatishbazi.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-volume-up"></i></div>
+                <h3>Mobile DJ & Trolley</h3>
+                <p>High-bass sound system aur LED screen wali DJ trolley jo baraat ke saath chalti hai.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking & Contact Section -->
+    <section id="booking">
+        <div class="section-title">
+            <h2>Booking & Sampark Karein</h2>
+            <div class="divider"></div>
+            <p>Apni shaadi ki tareekh aaj hi book karein — Direct WhatsApp par inquiry bhejein</p>
+        </div>
+
+        <div class="booking-container">
+            <!-- Contact Details -->
+            <div class="contact-info-box">
+                <h3>Great Master Band</h3>
+                <div class="info-item">
+                    <i class="fas fa-user-crown"></i>
+                    <div>
+                        <strong>Owner / Sanchalak:</strong><br>
+                        Banne Khan
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-volume"></i>
+                    <div>
+                        <strong>Mobile Number:</strong><br>
+                        <a href="tel:+919897985057" style="color: #fff; text-decoration: none; font-size: 1.2rem; font-weight: 700;">+91 9897985057</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Office Address:</strong><br>
+                        Shagun Vatika ke Paas, Shikohabad, Dist. Firozabad (U.P.)
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Booking Timing:</strong><br>
+                        Subah 9:00 Baje se Raat 10:00 Baje tak (Sabhi din khula)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Direct WhatsApp Booking Form -->
+            <form class="booking-form" id="whatsappForm">
+                <div class="form-group">
+                    <label>Aapka Naam *</label>
+                    <input type="text" id="custName" placeholder="Apna poora naam likhein" required>
+                </div>
+                <div class="form-group">
+                    <label>Mobile Number *</label>
+                    <input type="tel" id="custPhone" placeholder="Apna phone number dalein" required>
+                </div>
+                <div class="form-group">
+                    <label>Shaadi / Event ki Tareekh *</label>
+                    <input type="date" id="eventDate" required>
+                </div>
+                <div class="form-group">
+                    <label>Kaun si Service Chahiye?</label>
+                    <select id="serviceType">
+                        <option value="Full Wedding Package (Band + Baggi + Lights)">Full Wedding Package (Band + Baggi + Lights)</option>
+                        <option value="Royal Brass Band Only">Royal Brass Band Only</option>
+                        <option value="Ghodi & Shahi Baggi">Ghodi & Shahi Baggi</option>
+                        <option value="Punjabi Dhol & DJ Trolley">Punjabi Dhol & DJ Trolley</option>
+                        <option value="LED Chhatri & Aatishbazi">LED Chhatri & Aatishbazi</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Event Location / Venue</label>
+                    <input type="text" id="eventVenue" placeholder="Jaise: Shagun Vatika, Shikohabad">
+                </div>
+                <button type="submit" class="btn btn-gold" style="width: 100%; justify-content: center; font-size: 1.05rem;">
+                    <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> WhatsApp par Booking Inquiry Bhejein
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919897985057?text=Namaste%20Banne%20Khan%20ji,%20mujhe%20Great%20Master%20Band%20ki%20booking%20ke%20baare%20mein%20jaankari%20chahiye." class="whatsapp-float" target="_blank" title="WhatsApp Chat">
+        <i class
